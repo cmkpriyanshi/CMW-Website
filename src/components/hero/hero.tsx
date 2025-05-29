@@ -1,8 +1,8 @@
-import { Nav } from "@/components/nav";
+import { Nav } from "@/components/hero/nav";
 import { Button } from "@/components/ui/button";
 import { Pill, PillAvatar, PillAvatarGroup } from "@/components/ui/pill";
 import Image from "next/image";
-import { BackgroundBlur } from "@/components/background-blur";
+import { BackgroundBlur } from "@/components/ui/background-blur";
 
 export function Hero() {
   return (
@@ -22,7 +22,7 @@ export function Hero() {
           </p>
         </Pill>
         <h1 className="text-center text-4xl leading-[1.1] font-medium tracking-tight sm:text-7xl">
-          Meet the App<span className="text-foreground/40 block">That Does It All.</span>
+          Meet the App<span className="text-muted-foreground block">That Does It All.</span>
         </h1>
         <p className="max-w-lg text-center leading-6 tracking-tight sm:text-xl">
           Powerful, intuitive, and ready to make your life easier, start using Acme App today.
