@@ -151,3 +151,34 @@
     transparent
   );
 }
+
+.btn-black-3d {
+  background: linear-gradient(#3f3f46, #09090b);
+  color: white;
+  box-shadow: inset 0pt 4pt 3pt -2pt #71717a, 0pt 4pt 5pt -3pt rgba(0,0,0,0.5);
+  border-bottom: 2pt solid #000;
+  margin-bottom: 2pt;
+  transition: all 0.5s ease;
+}
+
+.btn-black-3d:hover {
+  border-bottom: 4pt solid #000;
+  margin-bottom: 0pt;
+  transform: translateY(-1pt);
+}
+
+.btn-black-3d:active {
+  box-shadow: inset 0pt 4pt 3pt -2pt #71717a, 0pt 4pt 5pt -3pt transparent;
+  border-bottom: 1pt solid #000;
+  margin-bottom: 3pt;
+  transform: translateY(0pt);
+}
+
+.btn-black-3d kbd {
+  background-color: #27272a;
+  box-shadow: inset 0pt -3pt 3pt -2pt #18181b, inset 0pt 3pt 3pt -2pt #52525b,
+    0pt 2pt 2pt -2pt rgba(0,0,0,0.5), 0pt 0pt 0pt 2pt #000;
+  margin: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+}
