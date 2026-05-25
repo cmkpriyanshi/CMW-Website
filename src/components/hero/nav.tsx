@@ -20,7 +20,7 @@ export function Nav() {
   return (
     <>
       <MobileNav className="flex md:hidden" items={navItems} />
-      <DesktopNav className="hidden md:flex" items={navItems} />
+      <DesktopNav className="hidden md:flex" />
     </>
   );
 }

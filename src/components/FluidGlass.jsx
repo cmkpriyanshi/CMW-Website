@@ -29,10 +29,17 @@ export default function FluidGlass({ mode = 'lens', lensProps = {}, barProps = {
 
   return (
     <Canvas camera={{ position: [0, 0, 20], fov: 15 }} gl={{ alpha: true }}>
+      <ScrollControls damping={0.2} pages={3} distance={0.4}>
         {mode === 'bar' && <NavItems items={navItems} />}
         <Wrapper modeProps={modeProps}>
+          <Scroll>
+            <Typography />
+            <Images />
+          </Scroll>
+          <Scroll html />
           <Preload />
         </Wrapper>
+      </ScrollControls>
     </Canvas>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { FAQs } from "@/components/faqs/faqs";
-import { Features } from "@/components/features/features";
+import { BentoGrid } from "@/components/bento/bento-grid";
 import { Footer } from "@/components/footer/footer";
 import { Hero } from "@/components/hero/hero";
 import { Quote } from "@/components/quote/quote";
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Showcase />
       <Quote />
-      <Features />
+      <BentoGrid />
       <Testimonials />
       <FAQs />
       <Footer />
