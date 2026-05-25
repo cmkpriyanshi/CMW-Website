@@ -1,6 +1,5 @@
 import Image from "next/image";
 import BorderGlow from "@/components/BorderGlow";
-import { cn } from "@/lib/utils";
 
 export function BentoGrid() {
   return (

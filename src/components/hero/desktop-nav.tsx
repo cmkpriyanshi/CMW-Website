@@ -96,7 +96,6 @@ function ListItem({ title, children, href, icon, imgSrc, ...props }: React.Compo
       <NavigationMenuLink render={<Link href={href} className="group flex h-full flex-col p-3 rounded-md transition-opacity hover:opacity-80" />}>
         {imgSrc && (
           <div className="relative mb-3 h-24 w-full overflow-hidden rounded-md bg-muted">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={imgSrc} alt={title} className="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
           </div>
         )}
