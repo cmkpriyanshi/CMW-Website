@@ -15,7 +15,11 @@ type FeatureCardPorps = React.ComponentProps<'div'> & {
 type HoveredSquare = { col: number; row: number; id: number };
 
 export function FeatureCard({ feature, className, ...props }: FeatureCardPorps) {
-	const p = React.useMemo(() => genRandomPattern(), []);
+	const [p, setP] = React.useState<number[][]>([]);
+	
+	React.useEffect(() => {
+		setP(genRandomPattern());
+	}, []);
 	const [hoveredSquares, setHoveredSquares] = React.useState<HoveredSquare[]>([]);
 	const hoveredRef = React.useRef<[number, number] | null>(null);
 	const counterRef = React.useRef(0);

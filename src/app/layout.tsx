@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   description: "A vercel template for taking web payments for mobile apps with Paddle",
 };
 
+import { SmoothScroll } from "@/components/smooth-scroll";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
         <Toaster />
       </body>
     </html>
