@@ -3,12 +3,32 @@
 import Image from "next/image";
 import Link from "next/link";
 import BorderGlow from "@/components/BorderGlow";
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import React, { useRef } from "react";
 
 export function BentoGrid() {
+  const ref = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start 90%", "center center"]
+  });
+
+  // Card 1 (Warranty): animates first
+  const opacity1 = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+  const y1 = useTransform(scrollYProgress, [0, 0.5], [60, 0]);
+
+  // Card 2 (Vault): animates second
+  const opacity2 = useTransform(scrollYProgress, [0.25, 0.75], [0, 1]);
+  const y2 = useTransform(scrollYProgress, [0.25, 0.75], [60, 0]);
+
+  // Card 3 (Reminder): animates third
+  const opacity3 = useTransform(scrollYProgress, [0.5, 1.0], [0, 1]);
+  const y3 = useTransform(scrollYProgress, [0.5, 1.0], [60, 0]);
+
   return (
-    <section className="py-24" id="features">
+    <section ref={ref} className="py-24" id="features">
       <div className="mx-auto w-full max-w-6xl px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-5xl">Explore Our Core Modules.</h2>
@@ -19,11 +39,7 @@ export function BentoGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-6">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, margin: "0px 0px -15% 0px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            whileHover={{ y: -4 }}
+            style={{ opacity: opacity1, y: y1 }}
             className="group col-span-1 md:row-span-2 h-full"
           >
             <BorderGlow 
@@ -70,11 +86,7 @@ export function BentoGrid() {
 
           {/* Vault Card - Half Width */}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, margin: "0px 0px -25% 0px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            whileHover={{ y: -4 }}
+            style={{ opacity: opacity2, y: y2 }}
             className="group col-span-1 h-full"
           >
             <BorderGlow 
@@ -119,11 +131,7 @@ export function BentoGrid() {
 
           {/* Reminder Card - Half Width */}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, margin: "0px 0px -10% 0px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            whileHover={{ y: -4 }}
+            style={{ opacity: opacity3, y: y3 }}
             className="group col-span-1 h-full"
           >
             <BorderGlow 

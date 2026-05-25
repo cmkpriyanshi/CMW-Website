@@ -1,6 +1,7 @@
 'use client';
 import { Scan, Bell, Lock, Users, Cloud, Send } from 'lucide-react';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react';
+import React, { useRef } from 'react';
 import { FeatureCard } from '@/components/ui/grid-feature-cards';
 
 const features = [
@@ -68,8 +69,18 @@ type ViewAnimationProps = {
 	children: React.ReactNode;
 };
 
-function AnimatedContainer({ className, delay = 0.1, children }: ViewAnimationProps) {
+function AnimatedContainer({ className, children }: ViewAnimationProps) {
 	const shouldReduceMotion = useReducedMotion();
+	const ref = useRef<HTMLDivElement>(null);
+
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["start 90%", "start 40%"]
+	});
+
+	const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+	const y = useTransform(scrollYProgress, [0, 1], [-8, 0]);
+	const filter = useTransform(scrollYProgress, [0, 1], ["blur(4px)", "blur(0px)"]);
 
 	if (shouldReduceMotion) {
 		return <div className={className}>{children}</div>;
@@ -77,10 +88,8 @@ function AnimatedContainer({ className, delay = 0.1, children }: ViewAnimationPr
 
 	return (
 		<motion.div
-			initial={{ filter: 'blur(4px)', translateY: -8, opacity: 0 }}
-			whileInView={{ filter: 'blur(0px)', translateY: 0, opacity: 1 }}
-			viewport={{ once: true }}
-			transition={{ delay, duration: 0.8 }}
+			ref={ref}
+			style={{ opacity, y, filter }}
 			className={className}
 		>
 			{children}
