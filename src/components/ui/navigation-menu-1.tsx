@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from 'react';
 import { cn } from '@/lib/utils';
 import { NavigationMenu as NavigationMenuPrimitive } from '@base-ui-components/react/navigation-menu';
