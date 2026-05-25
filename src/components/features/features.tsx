@@ -1,6 +1,6 @@
 'use client';
 import { Scan, Bell, Lock, Users, Cloud, Send } from 'lucide-react';
-import { motion, useReducedMotion } from 'framer-motion';
+import { motion, useReducedMotion } from 'motion/react';
 import { FeatureCard } from '@/components/ui/grid-feature-cards';
 
 const features = [
