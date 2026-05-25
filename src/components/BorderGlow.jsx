@@ -29,7 +29,7 @@ function buildGradientVars(colors) {
     const c = colors[Math.min(COLOR_MAP[i], colors.length - 1)];
     vars[GRADIENT_KEYS[i]] = `radial-gradient(at ${GRADIENT_POSITIONS[i]}, ${c} 0px, transparent 50%)`;
   }
-  vars['--gradient-base'] = `linear-gradient(${colors[0]} 0 100%)`;
+  vars['--gradient-base'] = `linear-gradient(${colors[0]}, ${colors[0]})`;
   return vars;
 }
 

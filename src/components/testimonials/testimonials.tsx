@@ -1,6 +1,9 @@
-import { Badge } from "@/components/ui/badge";
-import { TestimonialMarquee } from "@/components/testimonials/testimonial-marquee";
+"use client";
 
+import { motion } from "motion/react";
+import { TestimonialsColumn } from "@/components/ui/testimonials-columns-1";
+
+// Legacy type kept for backward compatibility
 export type Testimonial = {
   name: string;
   date: string;
@@ -12,51 +15,103 @@ export type Testimonial = {
 
 const testimonials = [
   {
-    name: "Giana Herwitz",
-    date: "May 4",
-    title: "Title will be here",
-    content: `"Acme helped us launch our mobile app in days—not weeks. The customization options are top-notch."`,
-    rating: 5,
+    text: "CheckMyWarranty completely changed how I manage my appliances. I never miss an expiration date now!",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    name: "Aisha Malik",
+    role: "Homeowner",
   },
   {
-    name: "Hanna Gouse",
-    date: "May 4",
-    title: "Title will be here",
-    content: `"When I signed up with Acme it was a no-brainer. It's been one of the best decisions I've made to ensure my finances are on point."`,
-    rating: 5,
+    text: "I used to lose track of receipts all the time. Now everything is in one secure vault. Absolutely love it.",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    name: "Jordan Lee",
+    role: "Small Business Owner",
   },
   {
-    name: "Kaiya Donin",
-    date: "May 4",
-    title: "Title will be here",
-    content: `"I love how easy it is to manage everything from the dashboard. Acme keeps it simple but powerful."`,
-    rating: 5,
+    text: "The reminder system is so smart. I got notified before my laptop warranty expired and saved hundreds on repairs.",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    name: "Priya Sharma",
+    role: "Freelance Designer",
   },
   {
-    name: "Alex Bergwijn",
-    date: "May 4",
-    title: "Title will be here",
-    content: `"Acme made our brand shine—our app looks and feels like it was built just for us."`,
-    rating: 5,
+    text: "As someone who buys a lot of electronics, this app is a lifesaver. Everything is organized perfectly.",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    name: "Carlos Mendes",
+    role: "Tech Enthusiast",
   },
-] satisfies Testimonial[];
+  {
+    text: "The digital vault for documents is incredibly secure. I store all my product receipts there without worry.",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
+    name: "Sophie Turner",
+    role: "Office Manager",
+  },
+  {
+    text: "Setting up was super quick. Within minutes I had all my warranties tracked and organized.",
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
+    name: "Ameer Hassan",
+    role: "Product Manager",
+  },
+  {
+    text: "I recommended CheckMyWarranty to everyone in my family. It's simple yet incredibly powerful.",
+    image: "https://randomuser.me/api/portraits/women/7.jpg",
+    name: "Layla Johnson",
+    role: "Teacher",
+  },
+  {
+    text: "The intelligent reminders work perfectly. I always know when something needs attention before it's too late.",
+    image: "https://randomuser.me/api/portraits/men/8.jpg",
+    name: "David Kim",
+    role: "Engineer",
+  },
+  {
+    text: "Best warranty management app out there. The UI is clean, fast, and easy to navigate.",
+    image: "https://randomuser.me/api/portraits/women/9.jpg",
+    name: "Nadia Rahman",
+    role: "UX Researcher",
+  },
+];
+
+const firstColumn = testimonials.slice(0, 3);
+const secondColumn = testimonials.slice(3, 6);
+const thirdColumn = testimonials.slice(6, 9);
 
 export function Testimonials() {
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 px-6 py-14 md:py-25">
-      <Badge variant="secondary" className="mb-2 uppercase">
-        Testimonial
-      </Badge>
-      <h2 className="text-center text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-        Don&apos;t Take<div className="text-muted-foreground">Our Word for It</div>
-      </h2>
-      <p className="mb-3 max-w-lg text-center leading-6 tracking-tight sm:text-xl lg:mb-8">
-        We&apos;ve built the ultimate white-label app platform so you can focus on growing your brand—not building tech
-      </p>
-      <div className="relative w-[calc(100%+3rem)] overflow-x-hidden py-4 lg:w-full">
-        <TestimonialMarquee testimonials={testimonials} className="mb-4" />
-        <TestimonialMarquee testimonials={testimonials} reverse />
+    <section className="bg-background my-20 relative">
+      <div className="mx-auto w-full max-w-6xl px-4 md:px-6 z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center max-w-[540px] mx-auto"
+        >
+          <div className="flex justify-center">
+            <div className="border py-1 px-4 rounded-lg text-sm text-muted-foreground">
+              Testimonials
+            </div>
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mt-5 text-center">
+            What our users say
+          </h2>
+          <p className="text-center mt-5 text-muted-foreground">
+            Join thousands of users who never miss a warranty expiry again.
+          </p>
+        </motion.div>
+
+        <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">
+          <TestimonialsColumn testimonials={firstColumn} duration={15} />
+          <TestimonialsColumn
+            testimonials={secondColumn}
+            className="hidden md:block"
+            duration={19}
+          />
+          <TestimonialsColumn
+            testimonials={thirdColumn}
+            className="hidden lg:block"
+            duration={17}
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
