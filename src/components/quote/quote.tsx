@@ -13,13 +13,13 @@ export function Quote() {
           wordAnimationEnd="bottom center"
           rotationEnd="bottom center"
         >
-          &quot;Since the first day we used Acme, we knew we&apos;d never go back to spreadsheets again.&quot;
+          &quot;Since the first day we used CheckMyWarranty, we knew we&apos;d never go back to spreadsheets again.&quot;
         </ScrollReveal>
       </blockquote>
       <figcaption className="mt-10">
-        <span className="block font-semibold tracking-tight md:text-xl">Daniel Rees</span>
+        <span className="block font-semibold tracking-tight md:text-xl">Anuj Dalal</span>
         <span className="text-muted-foreground mt-1 block text-xs tracking-tighter md:text-xl">
-          VP of Operations · Acme Inc.
+          Founder & CEO · Zestard Technologies
         </span>
       </figcaption>
     </figure>

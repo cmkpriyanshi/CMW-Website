@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const links = [
   {
-    title: "Acme",
+    title: "CheckMyWarranty",
     links: [
       {
         label: "Download App",
@@ -99,7 +99,7 @@ export function Footer() {
   return (
     <footer className="relative -mt-25 flex flex-col items-center justify-center overflow-hidden py-12 pt-37 md:py-25 md:pt-37 min-h-[500px]">
       <FooterBlur />
-      
+
       {/* Background Watermark */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center z-0 opacity-10">
         <span className="text-[40vw] leading-none font-bold tracking-tighter text-foreground select-none">

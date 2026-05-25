@@ -2,6 +2,7 @@
 
 import { FAQs } from "@/components/faqs/faqs";
 import { BentoGrid } from "@/components/bento/bento-grid";
+import { Features } from "@/components/features/features";
 import { Footer } from "@/components/footer/footer";
 import { Hero } from "@/components/hero/hero";
 import { Quote } from "@/components/quote/quote";
@@ -18,6 +19,7 @@ export default function Home() {
       <Showcase />
       <Quote />
       <BentoGrid />
+      <Features />
       <Testimonials />
       <FAQs />
       <Footer />

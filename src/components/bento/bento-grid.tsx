@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import BorderGlow from "@/components/BorderGlow";
 import { motion } from "motion/react";
+import { ArrowUpRight } from "lucide-react";
 
 export function BentoGrid() {
   return (
@@ -19,7 +21,7 @@ export function BentoGrid() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -15% 0px" }}
+            viewport={{ once: false, margin: "0px 0px -15% 0px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             whileHover={{ y: -4 }}
             className="group col-span-1 md:row-span-2 h-full"
@@ -32,23 +34,37 @@ export function BentoGrid() {
               borderRadius={24}
               coneSpread={3}
             >
-              <div className="p-8 md:p-12 pb-0">
-                <h3 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">Comprehensive Warranty Tracking</h3>
-                <p className="mt-4 text-muted-foreground md:text-lg">
-                  Protect your assets with comprehensive warranty tracking. Easily upload receipts, set expiration dates, and never lose track of a warranty again.
-                </p>
-              </div>
-              <div className="relative mt-8 w-[85%] mx-auto flex-1 min-h-[250px]">
-                <div className="absolute inset-x-0 top-0">
-                  <Image 
-                    src="/mockups/warranty.png" 
-                    alt="Warranty Tracking Mockup" 
-                    width={800}
-                    height={1600}
-                    className="w-full h-auto transition-transform duration-500 group-hover:-translate-y-2"
-                  />
+              <Link href="/modules/warranty" className="flex flex-col h-full cursor-pointer relative z-10 outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-[24px]">
+                <div className="p-8 md:p-12 pb-0">
+                  <div className="flex items-center justify-between gap-4 flex-wrap">
+                    <h3 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
+                      Comprehensive Warranty Tracking
+                    </h3>
+                    <div className="shrink-0 bg-background/50 backdrop-blur-sm border border-border/50 w-fit rounded-full h-12 relative text-foreground text-sm font-medium flex items-center overflow-hidden shadow-sm">
+                      <div className="btn-black-3d !transition-all !duration-500 !ease-out rounded-full h-10 w-10 flex items-center justify-center absolute left-1 top-[2px] group-hover:w-[calc(100%-8px)] z-10">
+                        <ArrowUpRight className="text-white w-5 h-5 transition-transform duration-500 group-hover:rotate-45" />
+                      </div>
+                      <p className="pl-14 pr-6 relative z-0 whitespace-nowrap">
+                        Explore Warranty
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-muted-foreground md:text-lg">
+                    Protect your assets with comprehensive warranty tracking. Easily upload receipts, set expiration dates, and never lose track of a warranty again.
+                  </p>
                 </div>
-              </div>
+                <div className="relative mt-8 w-[85%] mx-auto flex-1 min-h-[250px]">
+                  <div className="absolute inset-x-0 top-0">
+                    <Image 
+                      src="/mockups/warranty.png" 
+                      alt="Warranty Tracking Mockup" 
+                      width={800}
+                      height={1600}
+                      className="w-full h-auto transition-transform duration-500 group-hover:-translate-y-2"
+                    />
+                  </div>
+                </div>
+              </Link>
             </BorderGlow>
           </motion.div>
 
@@ -56,7 +72,7 @@ export function BentoGrid() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -25% 0px" }}
+            viewport={{ once: false, margin: "0px 0px -25% 0px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             whileHover={{ y: -4 }}
             className="group col-span-1 h-full"
@@ -69,23 +85,35 @@ export function BentoGrid() {
               borderRadius={24}
               coneSpread={3}
             >
-              <div className="p-8 pb-0">
-                <h3 className="text-2xl font-bold tracking-tight text-foreground">Secure Digital Vault</h3>
-                <p className="mt-4 text-muted-foreground">
-                  Secure storage for all your important digital documents. Keep your files encrypted and accessible anytime, anywhere.
-                </p>
-              </div>
-              <div className="relative mt-8 w-[85%] mx-auto flex-1 min-h-[250px]">
-                <div className="absolute inset-x-0 top-0">
-                  <Image 
-                    src="/mockups/vault.png" 
-                    alt="Secure Vault Mockup" 
-                    width={800}
-                    height={1600}
-                    className="w-full h-auto transition-transform duration-500 group-hover:-translate-y-2"
-                  />
+              <Link href="/modules/vault" className="flex flex-col h-full cursor-pointer relative z-10 outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-[24px]">
+                <div className="p-8 pb-0">
+                  <div className="flex items-center justify-between gap-4 flex-wrap">
+                    <h3 className="text-2xl font-bold tracking-tight text-foreground">Secure Digital Vault</h3>
+                    <div className="shrink-0 bg-background/50 backdrop-blur-sm border border-border/50 w-fit rounded-full h-12 relative text-foreground text-sm font-medium flex items-center overflow-hidden shadow-sm">
+                      <div className="btn-black-3d !transition-all !duration-500 !ease-out rounded-full h-10 w-10 flex items-center justify-center absolute left-1 top-[2px] group-hover:w-[calc(100%-8px)] z-10">
+                        <ArrowUpRight className="text-white w-4 h-4 md:w-5 md:h-5 transition-transform duration-500 group-hover:rotate-45" />
+                      </div>
+                      <p className="pl-14 pr-6 relative z-0 whitespace-nowrap">
+                        Explore Vault
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-muted-foreground">
+                    Secure storage for all your important digital documents. Keep your files encrypted and accessible anytime, anywhere.
+                  </p>
                 </div>
-              </div>
+                <div className="relative mt-8 w-[85%] mx-auto flex-1 min-h-[250px]">
+                  <div className="absolute inset-x-0 top-0">
+                    <Image 
+                      src="/mockups/vault.png" 
+                      alt="Secure Vault Mockup" 
+                      width={800}
+                      height={1600}
+                      className="w-full h-auto transition-transform duration-500 group-hover:-translate-y-2"
+                    />
+                  </div>
+                </div>
+              </Link>
             </BorderGlow>
           </motion.div>
 
@@ -93,7 +121,7 @@ export function BentoGrid() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+            viewport={{ once: false, margin: "0px 0px -10% 0px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             whileHover={{ y: -4 }}
             className="group col-span-1 h-full"
@@ -106,23 +134,35 @@ export function BentoGrid() {
               borderRadius={24}
               coneSpread={3}
             >
-              <div className="p-8 pb-0">
-                <h3 className="text-2xl font-bold tracking-tight text-foreground">Intelligent Reminders</h3>
-                <p className="mt-4 text-muted-foreground">
-                  Never miss an important date or expiration again. Receive context-aware notifications tailored to your schedule.
-                </p>
-              </div>
-              <div className="relative mt-8 w-[85%] mx-auto flex-1 min-h-[250px]">
-                <div className="absolute inset-x-0 top-0">
-                  <Image 
-                    src="/mockups/reminder.png" 
-                    alt="Intelligent Reminders Mockup" 
-                    width={800}
-                    height={1600}
-                    className="w-full h-auto transition-transform duration-500 group-hover:-translate-y-2"
-                  />
+              <Link href="/modules/reminders" className="flex flex-col h-full cursor-pointer relative z-10 outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-[24px]">
+                <div className="p-8 pb-0">
+                  <div className="flex items-center justify-between gap-4 flex-wrap">
+                    <h3 className="text-2xl font-bold tracking-tight text-foreground">Intelligent Reminders</h3>
+                    <div className="shrink-0 bg-background/50 backdrop-blur-sm border border-border/50 w-fit rounded-full h-12 relative text-foreground text-sm font-medium flex items-center overflow-hidden shadow-sm">
+                      <div className="btn-black-3d !transition-all !duration-500 !ease-out rounded-full h-10 w-10 flex items-center justify-center absolute left-1 top-[2px] group-hover:w-[calc(100%-8px)] z-10">
+                        <ArrowUpRight className="text-white w-4 h-4 md:w-5 md:h-5 transition-transform duration-500 group-hover:rotate-45" />
+                      </div>
+                      <p className="pl-14 pr-6 relative z-0 whitespace-nowrap">
+                        Explore Reminders
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-muted-foreground">
+                    Never miss an important date or expiration again. Receive context-aware notifications tailored to your schedule.
+                  </p>
                 </div>
-              </div>
+                <div className="relative mt-8 w-[85%] mx-auto flex-1 min-h-[250px]">
+                  <div className="absolute inset-x-0 top-0">
+                    <Image 
+                      src="/mockups/reminder.png" 
+                      alt="Intelligent Reminders Mockup" 
+                      width={800}
+                      height={1600}
+                      className="w-full h-auto transition-transform duration-500 group-hover:-translate-y-2"
+                    />
+                  </div>
+                </div>
+              </Link>
             </BorderGlow>
           </motion.div>
         </div>

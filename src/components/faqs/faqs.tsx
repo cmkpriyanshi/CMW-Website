@@ -59,7 +59,7 @@ export function FAQs() {
           </AccordionContentFAQs>
         </AccordionItemFAQs>
         <AccordionItemFAQs value="skills">
-          <AccordionTriggerFAQs>Do I need technical skills to use Acme?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>Do I need technical skills to use CheckMyWarranty?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
               No. We handle all the technical setup for you. You can focus on your business while we handle the rest.
