@@ -37,7 +37,7 @@ const features = [
 	},
 ];
 
-export function Features() {
+export function WarrantyFeatures() {
 	return (
 		<section className="py-24" id="features">
 			<div className="mx-auto w-full max-w-6xl space-y-12 px-4 md:px-6">
