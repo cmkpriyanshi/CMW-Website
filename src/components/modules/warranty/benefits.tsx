@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import BorderGlow from "@/components/BorderGlow";
 import { motion, useScroll, useTransform } from "motion/react";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export function WarrantyBenefits() {
   const ref = useRef<HTMLElement>(null);
@@ -27,12 +28,12 @@ export function WarrantyBenefits() {
   return (
     <section ref={ref} className="py-24" id="features">
       <div className="mx-auto w-full max-w-6xl px-4 md:px-6">
-        <div className="mb-12 text-center">
+        <FadeIn className="mb-12 text-center">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-5xl">The ultimate protection.</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-xl">
             Why you need a centralized digital vault for all your warranties.
           </p>
-        </div>
+        </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-6">
           <motion.div

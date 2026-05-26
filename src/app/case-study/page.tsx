@@ -3,29 +3,24 @@
 import { ArrowUpRight } from "lucide-react";
 import { caseStudyData } from "@/components/case-study/case-study";
 import { motion } from "motion/react";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export default function CaseStudyPage() {
   return (
     <main className="flex-1 w-full flex flex-col items-center justify-center pt-24 pb-16">
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-        <div className="mb-12 flex flex-col items-center text-center gap-4">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+        <FadeIn className="mb-12 flex flex-col items-center text-center gap-4">
+          <h1 
             className="text-4xl font-bold tracking-tighter sm:text-6xl text-foreground"
           >
             Case Studies
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+          </h1>
+          <p 
             className="max-w-2xl text-muted-foreground md:text-xl"
           >
             Discover how leading companies and individuals are leveraging our digital vault to protect their assets.
-          </motion.p>
-        </div>
+          </p>
+        </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {caseStudyData.map((item, index) => (

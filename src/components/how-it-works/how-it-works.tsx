@@ -2,6 +2,7 @@ import { HowItWorksCarousel } from "@/components/how-it-works/how-it-works-carou
 import { HowItWorksTabs } from "@/components/how-it-works/how-it-works-tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScanIcon, CalendarClockIcon, BellRingIcon, HandHeartIcon } from "lucide-react";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export type Step = {
   icon: React.ReactNode;
@@ -52,15 +53,17 @@ export function HowItWorks({
 }: HowItWorksProps) {
   return (
     <div id="how-it-works" className="flex w-full flex-col items-center gap-6 px-6 py-14 md:px-10 md:py-25">
-      <Badge variant="secondary" className="uppercase">
-        {badge}
-      </Badge>
-      <h2 className="text-center text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-        {title}
-      </h2>
-      <p className="mb-3 max-w-lg text-center leading-6 tracking-tight sm:text-xl lg:mb-8 text-muted-foreground">
-        {description}
-      </p>
+      <FadeIn className="flex flex-col items-center gap-6">
+        <Badge variant="secondary" className="uppercase">
+          {badge}
+        </Badge>
+        <h2 className="text-center text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
+          {title}
+        </h2>
+        <p className="mb-3 max-w-lg text-center leading-6 tracking-tight sm:text-xl lg:mb-8 text-muted-foreground">
+          {description}
+        </p>
+      </FadeIn>
       <HowItWorksCarousel steps={steps} className="block lg:hidden" />
       <HowItWorksTabs steps={steps} className="hidden lg:block" />
     </div>

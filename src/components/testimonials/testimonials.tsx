@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { TestimonialsColumn } from "@/components/ui/testimonials-columns-1";
+import { FadeIn } from "@/components/ui/fade-in";
 
 // Legacy type kept for backward compatibility
 export type Testimonial = {
@@ -78,11 +79,7 @@ export function Testimonials() {
   return (
     <section className="bg-background my-20 relative">
       <div className="mx-auto w-full max-w-6xl px-4 md:px-6 z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          viewport={{ once: true }}
+        <FadeIn
           className="flex flex-col items-center justify-center max-w-[540px] mx-auto"
         >
           <div className="flex justify-center">
@@ -96,7 +93,7 @@ export function Testimonials() {
           <p className="text-center mt-5 text-muted-foreground">
             Join thousands of users who never miss a warranty expiry again.
           </p>
-        </motion.div>
+        </FadeIn>
 
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">
           <TestimonialsColumn testimonials={firstColumn} duration={15} />

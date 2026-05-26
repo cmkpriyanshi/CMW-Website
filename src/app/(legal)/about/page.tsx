@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export const metadata: Metadata = {
   title: "About Us | CheckMyWarranty",
@@ -8,10 +9,12 @@ export const metadata: Metadata = {
 export default function AboutUs() {
   return (
     <main className="mx-auto w-full max-w-3xl mt-12 md:mt-20 pb-24 px-4 text-left">
-      <h1 className="text-4xl font-medium tracking-tight sm:text-5xl text-foreground mb-4">
-        About Us
-      </h1>
-      <p className="text-muted-foreground mb-12">Building the future of warranty tracking</p>
+      <FadeIn>
+        <h1 className="text-4xl font-medium tracking-tight sm:text-5xl text-foreground mb-4">
+          About Us
+        </h1>
+        <p className="text-muted-foreground mb-12">Building the future of warranty tracking</p>
+      </FadeIn>
 
       <div className="space-y-8 text-muted-foreground leading-relaxed">
         <section>

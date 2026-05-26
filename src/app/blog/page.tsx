@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import BorderGlow from "@/components/BorderGlow";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export const metadata: Metadata = {
   title: "Blog | CheckMyWarranty",
@@ -57,14 +58,14 @@ export default function BlogPage() {
   return (
     <main className="flex flex-col pt-24 pb-24 mx-auto w-full max-w-6xl px-4 md:px-6">
       
-      <div className="mb-16 flex flex-col items-center text-center gap-4">
+      <FadeIn className="mb-16 flex flex-col items-center text-center gap-4">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl text-foreground">
           All Articles
         </h1>
         <p className="max-w-2xl text-muted-foreground md:text-xl mt-2">
           Dive into our full archive of guides, industry news, and tips to protect your assets.
         </p>
-      </div>
+      </FadeIn>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map((article, idx) => (
@@ -94,9 +95,13 @@ export default function BlogPage() {
                       </h3>
                     </div>
                     
-                    <div className="mt-6 flex items-center text-sm font-medium text-muted-foreground transition-colors duration-300">
-                      Read Article 
-                      <ArrowRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
+                    <div className="mt-6 shrink-0 bg-background/50 backdrop-blur-sm border border-border/50 w-fit rounded-full h-12 relative text-foreground text-sm font-medium flex items-center overflow-hidden shadow-sm">
+                      <div className="btn-black-3d !transition-all !duration-500 !ease-out rounded-full h-10 w-10 flex items-center justify-center absolute left-1 top-[2px] group-hover:w-[calc(100%-8px)] z-10">
+                        <ArrowUpRight className="text-white w-4 h-4 md:w-5 md:h-5 transition-transform duration-500 group-hover:rotate-45" />
+                      </div>
+                      <p className="pl-14 pr-6 relative z-0 whitespace-nowrap">
+                        Read Article
+                      </p>
                     </div>
                   </div>
                 </div>

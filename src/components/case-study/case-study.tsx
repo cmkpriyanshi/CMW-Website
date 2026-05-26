@@ -11,8 +11,9 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
-import React, { useRef } from "react";
+import { motion } from "motion/react";
+import React from "react";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export interface Gallery4Item {
   id: string;
@@ -63,16 +64,6 @@ export function CaseStudy() {
   const [canScrollNext, setCanScrollNext] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const ref = useRef<HTMLElement>(null);
-  const shouldReduceMotion = useReducedMotion();
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 90%", "center center"]
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  const y = useTransform(scrollYProgress, [0, 1], [40, 0]);
 
   useEffect(() => {
     if (!carouselApi) {
@@ -91,11 +82,8 @@ export function CaseStudy() {
   }, [carouselApi]);
 
   return (
-    <section ref={ref} className="py-24 overflow-hidden" id="case-study">
-      <motion.div
-        style={{ opacity: shouldReduceMotion ? 1 : opacity, y: shouldReduceMotion ? 0 : y }}
-        className="w-full"
-      >
+    <section className="py-24 overflow-hidden" id="case-study">
+      <FadeIn className="w-full">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="mb-12 flex flex-col items-center text-center gap-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">
@@ -195,7 +183,7 @@ export function CaseStudy() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </FadeIn>
     </section>
   );
 }

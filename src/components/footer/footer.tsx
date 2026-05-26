@@ -80,13 +80,6 @@ export function Footer() {
     <footer className="relative -mt-25 flex flex-col items-center justify-center overflow-hidden py-12 pt-37 md:py-25 md:pt-37 min-h-[500px]">
       <FooterBlur />
 
-      {/* Background Watermark */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center z-0 opacity-10">
-        <span className="text-[40vw] leading-none font-bold tracking-tighter text-foreground select-none">
-          CMW
-        </span>
-      </div>
-
       {/* Footer Links */}
       <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-2 gap-8 px-6 tracking-tight md:grid-cols-4">
         {links.map((link) => (

@@ -3,13 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { FadeIn } from "@/components/ui/fade-in";
 
 function AccordionItemFAQs(props: React.ComponentProps<typeof AccordionItem>) {
   return (
     <AccordionItem
       {...props}
       className={cn(
-        "bg-secondary/30 data-[state=open]:bg-card data-[state=open]:border-border rounded-lg border border-transparent px-5 py-2 transition-colors data-[state=open]:shadow-sm lg:px-7",
+        "border-b border-border py-2 last:border-0",
         props.className,
       )}
     />
@@ -32,7 +33,7 @@ function AccordionContentFAQs(props: React.ComponentProps<typeof AccordionConten
 export function FAQs() {
   return (
     <div className="mx-auto grid max-w-6xl gap-6 px-6 py-14 md:grid-cols-2 md:gap-14 md:px-10 md:py-25">
-      <div className="flex w-full flex-col gap-6">
+      <FadeIn className="flex w-full flex-col gap-6">
         <Badge variant="secondary" className="mb-2 uppercase">
           FAQ
         </Badge>
@@ -47,8 +48,8 @@ export function FAQs() {
         <Button className="w-fit" size="lg" asChild>
           <Link href="mailto:hello@checkmywarranty.com">Contact Us</Link>
         </Button>
-      </div>
-      <Accordion type="single" collapsible defaultValue="branding" className="grid w-full gap-4">
+      </FadeIn>
+      <Accordion type="single" collapsible defaultValue="branding" className="w-full">
         <AccordionItemFAQs value="branding">
           <AccordionTriggerFAQs>Will my app show your branding anywhere?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
