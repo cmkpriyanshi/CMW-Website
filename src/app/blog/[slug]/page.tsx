@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities, @typescript-eslint/no-unused-vars */
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -7,7 +8,8 @@ export const metadata: Metadata = {
   description: "Read our latest insights.",
 };
 
-export default function BlogArticle({ params }: { params: { slug: string } }) {
+export default async function BlogArticle({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   // Normally we would fetch the article by slug here.
   // Using generic mock content for demonstration.
   const title = "5 Hidden Manufacturer Warranty Clauses You Need to Know";

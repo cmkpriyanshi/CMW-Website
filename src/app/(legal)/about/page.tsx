@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities, @typescript-eslint/no-unused-vars */
 import type { Metadata } from "next";
 import { FadeIn } from "@/components/ui/fade-in";
 

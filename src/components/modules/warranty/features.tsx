@@ -1,7 +1,6 @@
 'use client';
 import { Scan, Bell, Lock, Users, Cloud, Send } from 'lucide-react';
-import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react';
-import React, { useRef } from 'react';
+import React from 'react';
 import { FeatureCard } from '@/components/ui/grid-feature-cards';
 import { FadeIn } from '@/components/ui/fade-in';
 
