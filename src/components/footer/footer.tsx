@@ -7,39 +7,39 @@ const links = [
     title: "CheckMyWarranty",
     links: [
       {
-        label: "Download App",
-        href: "https://apps.apple.com/",
-        title: "Download the app from the App Store",
+        label: "About Us",
+        href: "/about",
+        title: "Learn more about CheckMyWarranty",
       },
       {
         label: "Features",
         href: "/#features",
         title: "See our features",
       },
-      {
-        label: "Pricing",
-        href: "/pricing",
-        title: "View pricing",
-      },
     ],
   },
   {
-    title: "Products",
+    title: "Modules",
     links: [
       {
-        label: "For Android",
-        href: "https://play.google.com/store",
-        title: "Download on Android",
+        label: "Warranty Tracking",
+        href: "/modules/warranty",
+        title: "Explore Warranty Tracking",
       },
       {
-        label: "For iPhone",
-        href: "https://apps.apple.com/",
-        title: "Download on iOS",
+        label: "Digital Vault",
+        href: "/modules/vault",
+        title: "Explore Digital Vault",
+      },
+      {
+        label: "Reminders",
+        href: "/modules/reminders",
+        title: "Explore Reminders",
       },
     ],
   },
   {
-    title: "Company",
+    title: "Legal",
     links: [
       {
         label: "Terms & Conditions",
@@ -51,45 +51,25 @@ const links = [
         href: "/privacy-policy",
         title: "Read our Privacy Policy",
       },
-      {
-        label: "Refund Policy",
-        href: "/refund-policy",
-        title: "Read our Refund Policy",
-      },
     ],
   },
   {
-    title: "Follow Us",
+    title: "Resources",
     links: [
       {
-        label: (
-          <div className="flex items-center gap-2">
-            <XIcon className="h-4 w-4" />
-            <span>Twitter</span>
-          </div>
-        ),
-        href: "https://x.com/",
-        title: "Follow us on Twitter",
+        label: "Blog",
+        href: "/blog",
+        title: "Read our Blog",
       },
       {
-        label: (
-          <div className="flex items-center gap-2">
-            <LinkedInIcon className="h-4 w-4" />
-            <span>LinkedIn</span>
-          </div>
-        ),
-        href: "https://www.linkedin.com/",
-        title: "Connect with us on LinkedIn",
+        label: "Case Studies",
+        href: "/case-study",
+        title: "Read our Case Studies",
       },
       {
-        label: (
-          <div className="flex items-center gap-2">
-            <GithubIcon className="h-4 w-4" />
-            <span>Github</span>
-          </div>
-        ),
-        href: "https://github.com/",
-        title: "View our GitHub repository",
+        label: "Contact Us",
+        href: "mailto:hello@checkmywarranty.com",
+        title: "Contact Us",
       },
     ],
   },

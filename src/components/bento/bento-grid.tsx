@@ -28,7 +28,7 @@ export function BentoGrid() {
   const y3 = useTransform(scrollYProgress, [0.5, 1.0], [60, 0]);
 
   return (
-    <section ref={ref} className="py-24" id="features">
+    <section ref={ref} className="py-24" id="modules">
       <div className="mx-auto w-full max-w-6xl px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-5xl">Explore Our Core Modules.</h2>

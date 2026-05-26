@@ -15,7 +15,7 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Lock, BellRing } from "lucide-react";
+import { ShieldCheck, Lock, BellRing, BookOpen, Briefcase } from "lucide-react";
 
 export function DesktopNav({ className }: { className?: string }) {
   return (
@@ -43,7 +43,6 @@ export function DesktopNav({ className }: { className?: string }) {
                   title="Warranty" 
                   href="/modules/warranty" 
                   icon={<ShieldCheck className="h-4 w-4" />}
-                  imgSrc="https://images.unsplash.com/photo-1550565118-3a14e8d0386f?q=80&w=300&auto=format&fit=crop"
                 >
                   Protect your assets with comprehensive warranty tracking.
                 </ListItem>
@@ -53,7 +52,6 @@ export function DesktopNav({ className }: { className?: string }) {
                   title="Vault" 
                   href="/modules/vault" 
                   icon={<Lock className="h-4 w-4" />}
-                  imgSrc="https://images.unsplash.com/photo-1581445731737-142dbb9abf87?q=80&w=300&auto=format&fit=crop"
                 >
                   Secure storage for all your important digital documents.
                 </ListItem>
@@ -61,11 +59,33 @@ export function DesktopNav({ className }: { className?: string }) {
                 {/* Reminder Module */}
                 <ListItem 
                   title="Reminder" 
-                  href="/modules/reminder" 
+                  href="/modules/reminders" 
                   icon={<BellRing className="h-4 w-4" />}
-                  imgSrc="https://images.unsplash.com/photo-1614032840902-6019a3fa2e9a?q=80&w=300&auto=format&fit=crop"
                 >
                   Never miss an important date or expiration again.
+                </ListItem>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          {/* Resources Dropdown */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[400px] gap-2 p-2 md:w-[400px] md:grid-cols-2">
+                <ListItem 
+                  title="Blog" 
+                  href="/blog" 
+                  icon={<BookOpen className="h-4 w-4" />}
+                >
+                  Read our latest articles, guides, and industry news.
+                </ListItem>
+                <ListItem 
+                  title="Case Studies" 
+                  href="/case-study" 
+                  icon={<Briefcase className="h-4 w-4" />}
+                >
+                  Discover how leading companies protect their assets.
                 </ListItem>
               </ul>
             </NavigationMenuContent>
@@ -84,10 +104,6 @@ export function DesktopNav({ className }: { className?: string }) {
           <NavigationMenuPopup />
         </NavigationMenuPositioner>
       </NavigationMenu>
-
-      <Button asChild>
-        <Link href="/pricing">Get Started</Link>
-      </Button>
     </nav>
   );
 }

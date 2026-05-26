@@ -45,7 +45,7 @@ export function FAQs() {
           Get answers to commonly asked questions.
         </p>
         <Button className="w-fit" size="lg" asChild>
-          <Link href="/pricing">Get Started</Link>
+          <Link href="mailto:hello@checkmywarranty.com">Contact Us</Link>
         </Button>
       </div>
       <Accordion type="single" collapsible defaultValue="branding" className="grid w-full gap-4">

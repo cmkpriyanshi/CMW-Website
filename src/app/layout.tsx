@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+    <html lang="en" className="overflow-x-hidden max-w-[100vw]">
+      <body className={`${inter.variable} antialiased overflow-x-hidden max-w-[100vw]`}>
         <SmoothScroll>
           {children}
         </SmoothScroll>

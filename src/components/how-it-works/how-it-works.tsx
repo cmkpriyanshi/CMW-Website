@@ -10,7 +10,7 @@ export type Step = {
   image: string;
 };
 
-const steps = [
+const defaultWarrantySteps = [
   {
     icon: <ScanIcon size={20} />,
     title: "Scan Receipt",
@@ -37,17 +37,29 @@ const steps = [
   },
 ] satisfies Step[];
 
-export function HowItWorks() {
+export type HowItWorksProps = {
+  badge?: string;
+  title?: string;
+  description?: string;
+  steps?: Step[];
+};
+
+export function HowItWorks({
+  badge = "HOW IT WORKS",
+  title = "Discover how easy it is",
+  description = "We've built the ultimate digital vault so you can focus on your assets - not managing paperwork.",
+  steps = defaultWarrantySteps
+}: HowItWorksProps) {
   return (
     <div id="how-it-works" className="flex w-full flex-col items-center gap-6 px-6 py-14 md:px-10 md:py-25">
       <Badge variant="secondary" className="uppercase">
-        HOW IT WORKS
+        {badge}
       </Badge>
       <h2 className="text-center text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-        Discover how easy it is
+        {title}
       </h2>
       <p className="mb-3 max-w-lg text-center leading-6 tracking-tight sm:text-xl lg:mb-8 text-muted-foreground">
-        We&apos;ve built the ultimate digital vault so you can focus on your assets - not managing paperwork.
+        {description}
       </p>
       <HowItWorksCarousel steps={steps} className="block lg:hidden" />
       <HowItWorksTabs steps={steps} className="hidden lg:block" />
