@@ -136,7 +136,7 @@ export function ReminderBenefits() {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold tracking-tight text-foreground">Maximize Returns</h3>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    Not happy with a purchase? Get notified days before the store's return window closes so you never get stuck with a bad item.
+                    Not happy with a purchase? Get notified days before the store&apos;s return window closes so you never get stuck with a bad item.
                   </p>
                 </div>
               </div>

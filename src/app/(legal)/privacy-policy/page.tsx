@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-semibold text-foreground mb-4">5. Third-Party Integrations</h2>
           <p>
-            With your explicit permission, we may sync reminder dates to your native Apple, Google, or Outlook calendars. We only transmit the specific event details (e.g., "Coffee Maker Warranty Expiring") and never share the underlying document images or your full account profile with these calendar providers.
+            With your explicit permission, we may sync reminder dates to your native Apple, Google, or Outlook calendars. We only transmit the specific event details (e.g., &quot;Coffee Maker Warranty Expiring&quot;) and never share the underlying document images or your full account profile with these calendar providers.
           </p>
         </section>
 

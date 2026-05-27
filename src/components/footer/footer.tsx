@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities, @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { FooterBlur } from "@/components/footer/footer-blur";
 import { XIcon, LinkedInIcon, GithubIcon } from "@/components/footer/icons";
 import Link from "next/link";

@@ -54,7 +54,7 @@ export function ReminderFAQs() {
           <AccordionTriggerFAQs>How do the smart expiry reminders work?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              It's incredibly simple. You choose a custom alert period (such as 30 or 60 days before an expiration date), and our app will automatically send you a timely push notification on your device so you never miss a deadline.
+              It&apos;s incredibly simple. You choose a custom alert period (such as 30 or 60 days before an expiration date), and our app will automatically send you a timely push notification on your device so you never miss a deadline.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
@@ -78,7 +78,7 @@ export function ReminderFAQs() {
           <AccordionTriggerFAQs>What happens if I accidentally dismiss a notification?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Don't worry. The app maintains a persistent log of your upcoming and missed deadlines right on your main dashboard. You can also configure multi-channel alerts (like email or SMS) as a reliable backup.
+              Don&apos;t worry. The app maintains a persistent log of your upcoming and missed deadlines right on your main dashboard. You can also configure multi-channel alerts (like email or SMS) as a reliable backup.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>

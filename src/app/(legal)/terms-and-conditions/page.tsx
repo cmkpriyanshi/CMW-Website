@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities, @typescript-eslint/no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

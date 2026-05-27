@@ -64,7 +64,7 @@ export function WarrantyBenefits() {
                     Save Thousands on Unnecessary Replacements
                   </h3>
                   <p className="mt-6 text-muted-foreground md:text-lg leading-relaxed">
-                    Stop paying out of pocket for repairs on appliances or electronics you already insured. With our smart expiry alerts and digital warranty tracker, you'll always know exactly what's covered so you can easily claim free repairs before time runs out.
+                    Stop paying out of pocket for repairs on appliances or electronics you already insured. With our smart expiry alerts and digital warranty tracker, you&apos;ll always know exactly what&apos;s covered so you can easily claim free repairs before time runs out.
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export function WarrantyBenefits() {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold tracking-tight text-foreground">Seamless Offline Access</h3>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    Whether you're in a store or a dead zone, your warranties are always available. No internet connection required.
+                    Whether you&apos;re in a store or a dead zone, your warranties are always available. No internet connection required.
                   </p>
                 </div>
               </div>

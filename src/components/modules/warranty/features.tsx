@@ -61,7 +61,7 @@ export function WarrantyFeatures() {
 						Everything You Need for Total Peace of Mind.
 					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-xl">
-						Discover how CheckMyWarranty's powerful features take the hassle out of tracking product warranties, organizing receipts, and making claims.
+						Discover how CheckMyWarranty&apos;s powerful features take the hassle out of tracking product warranties, organizing receipts, and making claims.
 					</p>
 				</FadeIn>
 

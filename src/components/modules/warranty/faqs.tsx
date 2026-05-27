@@ -62,7 +62,7 @@ export function WarrantyFAQs() {
           <AccordionTriggerFAQs>How do I claim a warranty using the app?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              While we don't process claims directly, CheckMyWarranty instantly provides you with all the necessary documents, purchase dates, and customer care info so you can confidently file a claim in seconds with the manufacturer.
+              While we don&apos;t process claims directly, CheckMyWarranty instantly provides you with all the necessary documents, purchase dates, and customer care info so you can confidently file a claim in seconds with the manufacturer.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>

@@ -59,7 +59,7 @@ export function VaultFAQs() {
           </AccordionContentFAQs>
         </AccordionItemFAQs>
         <AccordionItemFAQs value="offline">
-          <AccordionTriggerFAQs>Can I access my vault documents if I don't have internet?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>Can I access my vault documents if I don&apos;t have internet?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
               Yes! CheckMyWarranty is built with an offline-first design. You can view your securely cached documents, such as insurance cards or warranties, anywherecompletely offline.

@@ -88,7 +88,7 @@ export function VaultBenefits() {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold tracking-tight text-foreground">Always Accessible</h3>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    Whether you're at a retailer dealing with a return or traveling abroad, your entire archive is securely available right in your pocket.
+                    Whether you&apos;re at a retailer dealing with a return or traveling abroad, your entire archive is securely available right in your pocket.
                   </p>
                 </div>
               </div>

@@ -70,7 +70,7 @@ export function FAQs() {
           <AccordionTriggerFAQs>Can I use the app without an internet connection?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Yes! CheckMyWarranty is built with an offline-first design. You can add warranties and view your digital vault completely offline. The app will automatically sync your changes to the cloud once you're back online.
+              Yes! CheckMyWarranty is built with an offline-first design. You can add warranties and view your digital vault completely offline. The app will automatically sync your changes to the cloud once you&apos;re back online.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
@@ -78,7 +78,7 @@ export function FAQs() {
           <AccordionTriggerFAQs>How do the smart expiry reminders work?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              You can customize timely pre-alerts for any expiring warranty or subscription. We'll send you a push notification exactly when you need it, ensuring you never miss a renewal date or claim window.
+              You can customize timely pre-alerts for any expiring warranty or subscription. We&apos;ll send you a push notification exactly when you need it, ensuring you never miss a renewal date or claim window.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>

@@ -5,7 +5,7 @@ import { VaultBenefits } from "@/components/modules/vault/benefits";
 import { VaultFAQs } from "@/components/modules/vault/faqs";
 import { Footer } from "@/components/footer/footer";
 import { Metadata } from "next";
-import { UploadCloud, Cpu, Lock, Globe } from "lucide-react";
+import { UploadCloud, Cpu } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Digital Vault | CheckMyWarranty",

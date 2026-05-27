@@ -5,7 +5,7 @@ import { ReminderBenefits } from "@/components/modules/reminders/benefits";
 import { ReminderFAQs } from "@/components/modules/reminders/faqs";
 import { Footer } from "@/components/footer/footer";
 import { Metadata } from "next";
-import { CalendarClock, ListTodo, BellRing, CheckCircle2 } from "lucide-react";
+import { BellRing } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Smart Reminders | CheckMyWarranty",
