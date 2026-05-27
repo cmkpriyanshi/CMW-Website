@@ -8,25 +8,25 @@ import { FadeIn } from "@/components/ui/fade-in";
 
 const articles = [
   {
-    title: "5 Hidden Manufacturer Warranty Clauses You Need to Know",
-    category: "Guides",
+    title: "5 Hidden Warranty Clauses That Could Cost You Hundreds",
+    category: "Consumer Guide",
     date: "May 24, 2026",
     gradient: "from-blue-500/20 to-cyan-500/20",
     href: "/blog/hidden-warranty-clauses"
   },
   {
-    title: "How We Saved Our Enterprise Clients $4.2M Last Year",
-    category: "Case Study",
+    title: "Why You Should Digitize Your Personal Documents Today",
+    category: "Digital Security",
     date: "May 20, 2026",
     gradient: "from-emerald-500/20 to-teal-500/20",
-    href: "/case-study/enterprise"
+    href: "/blog/digitize-personal-documents"
   },
   {
-    title: "The Death of the Paper Receipt: What it Means for Consumers",
-    category: "Industry News",
+    title: "The Best Ways to Track Subscriptions and Avoid Late Fees",
+    category: "Finance Tips",
     date: "May 15, 2026",
     gradient: "from-purple-500/20 to-pink-500/20",
-    href: "/blog/death-of-paper-receipt"
+    href: "/blog/track-subscriptions"
   }
 ];
 
@@ -36,10 +36,10 @@ export function BlogSection() {
       <div className="mx-auto w-full max-w-6xl px-4 md:px-6">
         <FadeIn className="mb-12 flex flex-col items-center text-center gap-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">
-            Latest Insights
+            Tips for Managing Your Digital Life
           </h2>
           <p className="max-w-2xl text-muted-foreground md:text-xl">
-            Stay ahead of the curve with our latest guides, industry news, and success stories.
+            Explore our latest guides on warranty tracking, organizing personal documents, and never missing another renewal date.
           </p>
           <Link href="/blog" className="group mt-2 shrink-0 bg-background/50 backdrop-blur-sm border border-border/50 w-fit rounded-full h-12 relative text-foreground text-sm font-medium flex items-center overflow-hidden shadow-sm">
             <div className="btn-black-3d !transition-all !duration-500 !ease-out rounded-full h-10 w-10 flex items-center justify-center absolute left-1 top-[2px] group-hover:w-[calc(100%-8px)] z-10">

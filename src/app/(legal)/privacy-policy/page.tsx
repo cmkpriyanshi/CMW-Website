@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | CheckMyWarranty",
-  description: "Learn how we collect, use, and protect your data.",
+  description: "Learn how we collect, process, and secure your personal documents and warranty data.",
 };
 
 export default function PrivacyPolicy() {
@@ -15,54 +15,67 @@ export default function PrivacyPolicy() {
 
       <div className="space-y-8 text-muted-foreground leading-relaxed">
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">1. Introduction</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">1. Our Privacy Philosophy</h2>
           <p>
-            Welcome to CheckMyWarranty. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website or use our application, and tell you about your privacy rights and how the law protects you.
+            Welcome to CheckMyWarranty. Your personal documents, receipts, and warranties are strictly your business. We built this platform to give you a secure, private way to organize your physical assets digitally. Our core philosophy is simple: we do not sell your data to marketers, and we implement the highest level of security to ensure nobody but you can read your vaulted documents.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">2. The Data We Collect About You</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">2. Information We Collect</h2>
           <p className="mb-4">
-            We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:
+            To provide our intelligent tracking and vault services, we collect the following types of information:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Identity Data:</strong> includes first name, last name, username or similar identifier.</li>
-            <li><strong>Contact Data:</strong> includes email address and telephone numbers.</li>
-            <li><strong>Asset Data:</strong> includes information about the products you register, warranty details, uploaded receipts, and expiration dates.</li>
-            <li><strong>Technical Data:</strong> includes internet protocol (IP) address, your login data, browser type and version, time zone setting and location.</li>
+            <li><strong>Account Data:</strong> Your name, email address, and authentication credentials.</li>
+            <li><strong>Document & Asset Data:</strong> Images of receipts, warranties, and personal IDs you choose to upload to the Vault.</li>
+            <li><strong>Extracted Metadata:</strong> Text automatically extracted by our AI from your uploads (e.g., purchase dates, store names, prices, warranty durations).</li>
+            <li><strong>Device & Sync Data:</strong> Push notification tokens, timezone settings, and device identifiers to enable offline caching and cross-device syncing.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">3. How We Use Your Personal Data</h2>
-          <p className="mb-4">We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">3. How We Process Your Data (including AI)</h2>
+          <p className="mb-4">
+            CheckMyWarranty uses Artificial Intelligence (AI) to make document organization effortless. Here is exactly how that works:
+          </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Where we need to perform the contract we are about to enter into or have entered into with you (e.g., providing our warranty tracking services).</li>
-            <li>To send you intelligent notifications and push alerts regarding warranty expirations.</li>
-            <li>Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.</li>
-            <li>Where we need to comply with a legal or regulatory obligation.</li>
+            <li>When you scan a receipt, the image is temporarily processed by our secure AI engine solely to extract relevant text (dates, prices).</li>
+            <li><strong>We do not use your personal documents to train public AI models.</strong></li>
+            <li>Once the metadata is extracted, the raw text and image are encrypted and locked in your digital vault.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">4. Data Security</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">4. Vault Security & Encryption</h2>
+          <p className="mb-4">
+            Your Digital Vault is protected by <strong>End-to-End Encryption (E2EE)</strong>. 
+          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Your sensitive documents are encrypted on your device before they ever reach our servers.</li>
+            <li>CheckMyWarranty employees, engineers, and automated systems cannot read or view the contents of your encrypted vault files.</li>
+            <li>For offline access, encrypted files may be cached securely on your local device. If your device is lost or stolen, your data remains encrypted behind your OS-level biometric security.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">5. Third-Party Integrations</h2>
           <p>
-            We have put in place appropriate security measures, including bank-grade encryption for your digital vault, to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know. They will only process your personal data on our instructions and they are subject to a duty of confidentiality.
+            With your explicit permission, we may sync reminder dates to your native Apple, Google, or Outlook calendars. We only transmit the specific event details (e.g., "Coffee Maker Warranty Expiring") and never share the underlying document images or your full account profile with these calendar providers.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">5. Data Retention</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">6. Data Retention and Deletion</h2>
           <p>
-            We will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements. You may request the deletion of your account and all associated vault documents at any time through the application settings.
+            You have complete control over your data. You may export or delete individual documents at any time. If you decide to close your CheckMyWarranty account, a single click will instantly initiate a permanent wipe of all your profile data, uploaded files, and metadata from our active servers and backups.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">6. Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">7. Contact Us</h2>
           <p>
-            If you have any questions about this privacy policy or our privacy practices, please contact us at: <br/>
+            If you have any questions about this privacy policy, how our AI processes data, or our encryption standards, please contact our Data Protection Officer at: <br/>
             <strong>Email:</strong> privacy@checkmywarranty.com
           </p>
         </section>

@@ -18,12 +18,12 @@ This starter project provides a fully functional implementation of a Paddle chec
 
 ## ✨ Features
 
-- Global tax compliance — As a merchant of record, Paddle handles all tax calculations, collections, and remittances so you don't have to.
-- Chargeback protection — Paddle manages chargebacks, combats fraud, and prevents card attacks, keeping your business secure.
-- Lower fees than IAPs — Connect directly with your users to reduce fees while increasing customer lifetime value.
-- Integrated with Paddle Retain — Minimize churn and maximize revenue with our comprehensive suite of retention tools.
-- Buyer support included — Customers can self-serve through our portal, while Paddle handles all order inquiries.
-- All-in-one payment platform — Enable new payment methods instantly without additional code or merchant accounts.
+- Global tax compliance  As a merchant of record, Paddle handles all tax calculations, collections, and remittances so you don't have to.
+- Chargeback protection  Paddle manages chargebacks, combats fraud, and prevents card attacks, keeping your business secure.
+- Lower fees than IAPs  Connect directly with your users to reduce fees while increasing customer lifetime value.
+- Integrated with Paddle Retain  Minimize churn and maximize revenue with our comprehensive suite of retention tools.
+- Buyer support included  Customers can self-serve through our portal, while Paddle handles all order inquiries.
+- All-in-one payment platform  Enable new payment methods instantly without additional code or merchant accounts.
 
 ## 📦 Included packages
 

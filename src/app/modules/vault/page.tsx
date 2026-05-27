@@ -2,7 +2,7 @@ import { VaultHero } from "@/components/modules/vault/hero";
 import { HowItWorks, Step } from "@/components/how-it-works/how-it-works";
 import { VaultFeatures } from "@/components/modules/vault/features";
 import { VaultBenefits } from "@/components/modules/vault/benefits";
-import { FAQs } from "@/components/faqs/faqs";
+import { VaultFAQs } from "@/components/modules/vault/faqs";
 import { Footer } from "@/components/footer/footer";
 import { Metadata } from "next";
 import { UploadCloud, Cpu, Lock, Globe } from "lucide-react";
@@ -15,27 +15,15 @@ export const metadata: Metadata = {
 const vaultSteps = [
   {
     icon: <UploadCloud size={20} />,
-    title: "Upload Documents",
-    description: "Add receipts and manuals via camera or direct upload.",
+    title: "Scan or Upload Document",
+    description: "Easily scan a physical receipt or select a digital document directly from your device's gallery.",
     image: "/how-it-works/warranty/step-1.png",
   },
   {
     icon: <Cpu size={20} />,
-    title: "AI Processing",
-    description: "Our AI instantly reads and tags your document details.",
+    title: "Smart AI Extraction",
+    description: "Let our AI instantly extract the important data and fill in the fields for you, or quickly enter them manually.",
     image: "/how-it-works/warranty/step-2.png",
-  },
-  {
-    icon: <Lock size={20} />,
-    title: "Secure Storage",
-    description: "Everything is encrypted and stored safely in the cloud.",
-    image: "/how-it-works/warranty/step-4.png",
-  },
-  {
-    icon: <Globe size={20} />,
-    title: "Access Anywhere",
-    description: "Retrieve your documents instantly from any device.",
-    image: "/how-it-works/warranty/step-3.png",
   },
 ] satisfies Step[];
 
@@ -44,14 +32,14 @@ export default function VaultPage() {
     <>
       <VaultHero />
       <HowItWorks 
-        badge="THE VAULT"
-        title="Digitization made simple"
-        description="Transform your physical clutter into a perfectly organized digital archive in three simple steps."
+        badge="SECURE VAULT"
+        title="How the Digital Vault Works"
+        description="Transforming your physical clutter into a perfectly organized, highly secure digital archive is incredibly easy."
         steps={vaultSteps}
       />
       <VaultFeatures />
       <VaultBenefits />
-      <FAQs />
+      <VaultFAQs />
       <Footer />
     </>
   );

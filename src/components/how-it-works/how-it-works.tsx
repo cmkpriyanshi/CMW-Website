@@ -1,7 +1,7 @@
 import { HowItWorksCarousel } from "@/components/how-it-works/how-it-works-carousel";
 import { HowItWorksTabs } from "@/components/how-it-works/how-it-works-tabs";
 import { Badge } from "@/components/ui/badge";
-import { ScanIcon, CalendarClockIcon, BellRingIcon, HandHeartIcon } from "lucide-react";
+import { ImagePlus, Wand2, MapPin, Box } from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
 
 export type Step = {
@@ -13,27 +13,27 @@ export type Step = {
 
 const defaultWarrantySteps = [
   {
-    icon: <ScanIcon size={20} />,
-    title: "Scan Receipt",
-    description: "Instantly extract details with AI scanning.",
+    icon: <ImagePlus size={20} />,
+    title: "Upload Your Document",
+    description: "Easily snap a photo or select a digital warranty document right from your device's gallery.",
     image: "/how-it-works/warranty/step-1.png",
   },
   {
-    icon: <CalendarClockIcon size={20} />,
-    title: "Set Expiration",
-    description: "Easily set or auto-detect warranty lengths.",
+    icon: <Wand2 size={20} />,
+    title: "Smart AI Extraction",
+    description: "Let our AI instantly extract the purchase date and fill in the details, or quickly enter them yourself.",
     image: "/how-it-works/warranty/step-2.png",
   },
   {
-    icon: <BellRingIcon size={20} />,
-    title: "Get Reminders",
-    description: "Receive push alerts before warranties expire.",
+    icon: <MapPin size={20} />,
+    title: "Assign a Location",
+    description: "Tag the broad physical location, like 'Home' or 'Office', so you always know where your asset lives.",
     image: "/how-it-works/warranty/step-3.png",
   },
   {
-    icon: <HandHeartIcon size={20} />,
-    title: "Claim Quickly",
-    description: "Initiate claims directly from the app.",
+    icon: <Box size={20} />,
+    title: "Specify Placement",
+    description: "Add pinpoint placement details like 'Bottom Desk Drawer' so you never lose a physical manual again.",
     image: "/how-it-works/warranty/step-4.png",
   },
 ] satisfies Step[];
@@ -47,8 +47,8 @@ export type HowItWorksProps = {
 
 export function HowItWorks({
   badge = "HOW IT WORKS",
-  title = "Discover how easy it is",
-  description = "We've built the ultimate digital vault so you can focus on your assets - not managing paperwork.",
+  title = "How Our Warranty Tracker Works",
+  description = "Digitizing your personal documents and tracking product warranties is as easy as taking a photo. Let our smart app do the heavy lifting.",
   steps = defaultWarrantySteps
 }: HowItWorksProps) {
   return (

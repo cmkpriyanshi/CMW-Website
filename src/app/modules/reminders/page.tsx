@@ -2,7 +2,7 @@ import { ReminderHero } from "@/components/modules/reminders/hero";
 import { HowItWorks, Step } from "@/components/how-it-works/how-it-works";
 import { ReminderFeatures } from "@/components/modules/reminders/features";
 import { ReminderBenefits } from "@/components/modules/reminders/benefits";
-import { FAQs } from "@/components/faqs/faqs";
+import { ReminderFAQs } from "@/components/modules/reminders/faqs";
 import { Footer } from "@/components/footer/footer";
 import { Metadata } from "next";
 import { CalendarClock, ListTodo, BellRing, CheckCircle2 } from "lucide-react";
@@ -14,28 +14,10 @@ export const metadata: Metadata = {
 
 const reminderSteps = [
   {
-    icon: <CalendarClock size={20} />,
-    title: "Set Reminders",
-    description: "Assign expiration dates manually or let our AI extract them.",
-    image: "/how-it-works/warranty/step-2.png",
-  },
-  {
-    icon: <ListTodo size={20} />,
-    title: "Choose Schedule",
-    description: "Pick when you want to be notified (e.g. 30, 60, 90 days out).",
-    image: "/how-it-works/warranty/step-4.png",
-  },
-  {
     icon: <BellRing size={20} />,
-    title: "Get Notified",
-    description: "Receive timely push alerts when deadlines approach.",
+    title: "Set Your Expiry Alert",
+    description: "Simply select your warranty, pick when you want a heads-up (like 30 or 60 days before), and we'll automatically notify you right on time.",
     image: "/how-it-works/warranty/step-3.png",
-  },
-  {
-    icon: <CheckCircle2 size={20} />,
-    title: "Take Action",
-    description: "Extend the warranty or file a claim instantly from the app.",
-    image: "/how-it-works/warranty/step-1.png",
   },
 ] satisfies Step[];
 
@@ -44,14 +26,14 @@ export default function ReminderPage() {
     <>
       <ReminderHero />
       <HowItWorks 
-        badge="REMINDERS"
-        title="Never forget a date"
-        description="Our intelligent notification engine keeps track of your timelines so you don't have to."
+        badge="SMART ALERTS"
+        title="How Our Smart Reminders Work"
+        description="Setting up intelligent warranty notifications takes just a few seconds. Let our app keep track of your deadlines so you don't have to."
         steps={reminderSteps}
       />
       <ReminderFeatures />
       <ReminderBenefits />
-      <FAQs />
+      <ReminderFAQs />
       <Footer />
     </>
   );

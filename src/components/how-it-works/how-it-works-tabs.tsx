@@ -39,12 +39,12 @@ export function HowItWorksTabs({ steps, className }: Props) {
 
   return (
     <Tabs className={cn("w-full max-w-6xl", className)} value={activeTab.title} onValueChange={handleTabChange}>
-      <TabsList className="grid h-auto w-full grid-cols-4 gap-6">
+      <TabsList className="flex flex-wrap justify-center h-auto w-full gap-6">
         {steps.map((step) => (
           <TabsTrigger
             key={step.title}
             value={step.title}
-            className="flex cursor-pointer flex-col items-center justify-start gap-5 px-2 py-6"
+            className="flex flex-1 cursor-pointer flex-col items-center justify-start gap-5 px-2 py-6 min-w-[250px] max-w-[270px]"
           >
             <StepDetails step={step} isActive={activeTab.title === step.title} />
           </TabsTrigger>

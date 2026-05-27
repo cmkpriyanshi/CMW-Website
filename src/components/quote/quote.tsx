@@ -13,7 +13,7 @@ export function Quote() {
           wordAnimationEnd="bottom center"
           rotationEnd="bottom center"
         >
-          &quot;Since the first day we used CheckMyWarranty, we knew we&apos;d never go back to spreadsheets again.&quot;
+          &quot;Before CheckMyWarranty, keeping track of receipts and warranty cards was a nightmare. Now, I just scan them and let the AI do the rest. It&apos;s the easiest app for organizing my personal documents and getting timely expiry reminders!&quot;
         </ScrollReveal>
       </blockquote>
       <figcaption className="mt-10">

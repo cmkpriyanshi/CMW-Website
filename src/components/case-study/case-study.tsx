@@ -26,35 +26,35 @@ export interface Gallery4Item {
 
 export const caseStudyData: Gallery4Item[] = [
   {
-    id: "enterprise",
-    title: "Global Retailer Saves $4.2M in Expired Claims",
+    id: "appliance-repair",
+    title: "How One Family Saved $1,200 on Appliance Repairs",
     description:
-      "See how integrating CheckMyWarranty into their supply chain allowed a leading retailer to automatically track and claim hardware warranties before they expired.",
-    href: "/case-study/enterprise",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxfHx8fHx8fHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
-  },
-  {
-    id: "startup",
-    title: "Tech Startup Eliminates Physical Receipts entirely",
-    description:
-      "Discover how a fast-growing tech startup used our digital vault to completely digitize their hardware asset management, achieving zero paper clutter in 30 days.",
-    href: "/case-study/startup",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwyfHx8fHx8fHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
-  },
-  {
-    id: "consumer",
-    title: "The $10k Home Appliances Claim",
-    description:
-      "How intelligent push notifications saved a family from having to pay out-of-pocket for a catastrophic refrigerator and HVAC failure just days before expiration.",
-    href: "/case-study/consumer",
+      "See how our smart expiry alerts helped a homeowner file a warranty claim for a broken refrigerator just two days before the coverage ended.",
+    href: "/case-study/appliance-repair",
     image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwzfHx8fHx8fHwxNzIzNjM0NDc0fA&ixlib=rb-4.0.3&q=80&w=1080",
   },
   {
-    id: "agency",
-    title: "Agency Tracks 500+ Employee Devices Seamlessly",
+    id: "digital-vault",
+    title: "Freelancer Digitizes 10 Years of Tax Receipts",
     description:
-      "A creative agency leverages our calendar sync and automated reminders to track warranties on over 500 MacBooks, iPads, and production monitors.",
-    href: "/case-study/agency",
+      "Discover how a busy designer used our AI receipt scanner to eliminate paper clutter and organize business expenses in our secure digital vault.",
+    href: "/case-study/digital-vault",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwyfHx8fHx8fHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
+  },
+  {
+    id: "property-documents",
+    title: "No More Lost Manuals or Property Deeds",
+    description:
+      "Learn how a new homebuyer used CheckMyWarranty to securely store encrypted property documents and appliance manuals in one place.",
+    href: "/case-study/property-documents",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxfHx8fHx8fHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
+  },
+  {
+    id: "subscription-renewals",
+    title: "Never Missing a Subscription Renewal Again",
+    description:
+      "How automated calendar syncing and intelligent reminders helped a tech enthusiast track and manage software subscriptions effortlessly.",
+    href: "/case-study/subscription-renewals",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHw0fHx8fHx8fHwxNzIzNDM1MzA1fA&ixlib=rb-4.0.3&q=80&w=1080",
   },
 ];
@@ -88,10 +88,10 @@ export function CaseStudy() {
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="mb-12 flex flex-col items-center text-center gap-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">
-              Success Stories
+              Real People, Real Savings
             </h2>
             <p className="max-w-2xl text-muted-foreground md:text-xl">
-              Discover how leading companies and individuals are leveraging our digital vault to protect their assets.
+              Discover how our users rely on CheckMyWarranty&apos;s personal vault and expiry reminders to save time, money, and space.
             </p>
             <Link href="/case-study" className="group mt-2 shrink-0 bg-background/50 backdrop-blur-sm border border-border/50 w-fit rounded-full h-12 relative text-foreground text-sm font-medium flex items-center overflow-hidden shadow-sm">
               <div className="btn-black-3d !transition-all !duration-500 !ease-out rounded-full h-10 w-10 flex items-center justify-center absolute left-1 top-[2px] group-hover:w-[calc(100%-8px)] z-10">

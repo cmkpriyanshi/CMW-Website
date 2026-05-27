@@ -1,5 +1,5 @@
 'use client';
-import { Scan, Bell, Lock, Users, Cloud, Send } from 'lucide-react';
+import { Scan, Bell, Lock, WifiOff, Cloud, Calendar, PieChart, MapPin, FileText } from 'lucide-react';
 import React from 'react';
 import { FeatureCard } from '@/components/ui/grid-feature-cards';
 import { FadeIn } from '@/components/ui/fade-in';
@@ -8,32 +8,47 @@ const features = [
 	{
 		title: 'AI Receipt Scanning',
 		icon: Scan,
-		description: 'Automatically extract product details, purchase dates, and warranty length from any receipt photo.',
+		description: 'Let our AI instantly extract product details, purchase dates, and warranty lengths from a simple photo of your receipt.',
 	},
 	{
 		title: 'Smart Expiry Alerts',
 		icon: Bell,
-		description: 'Receive intelligent notifications before your warranties expire, giving you time to act or extend.',
+		description: "Get timely pre-alerts before your warranties expire. We'll send you a heads-up exactly when you need it, so you never miss out.",
 	},
 	{
 		title: 'Secure Digital Vault',
 		icon: Lock,
-		description: 'Store all your important receipts and documents with bank-grade encryption in one secure place.',
+		description: 'Safely store your personal IDs, property deeds, and insurance papers in a secure, encrypted digital folder.',
 	},
 	{
-		title: 'Family Sharing',
-		icon: Users,
-		description: 'Share access to your warranty vault seamlessly with household members for joint asset management.',
+		title: 'Offline-First Access',
+		icon: WifiOff,
+		description: "No internet? No problem. Add warranties and access your vault offline; we'll sync everything automatically once you're back online.",
 	},
 	{
-		title: 'Global Cloud Sync',
+		title: 'Seamless Cloud Sync',
 		icon: Cloud,
-		description: 'Access your receipts and warranty data securely from any device, anywhere in the world.',
+		description: 'Your data is safely backed up to the cloud. Log in on any device and access your entire warranty portfolio instantly.',
 	},
 	{
-		title: 'Instant Claims',
-		icon: Send,
-		description: 'Initiate warranty claims directly with manufacturers through our streamlined built-in process.',
+		title: 'Device Calendar Sync',
+		icon: Calendar,
+		description: "Easily sync your warranty expirations and renewal reminders directly to your phone's native calendar for a unified view.",
+	},
+	{
+		title: 'Insightful Analytics',
+		icon: PieChart,
+		description: "Visualize your total asset value by category and see a snapshot of exactly which warranties are expiring soon.",
+	},
+	{
+		title: 'Location Tracking',
+		icon: MapPin,
+		description: "Log exactly where your physical items are stored (e.g., 'Office' or 'Garage') so you never have to hunt for a warranty card again.",
+	},
+	{
+		title: 'Multi-Page PDF Scanner',
+		icon: FileText,
+		description: "Need to store a long contract or manual? Use our built-in scanner to capture and merge multiple pages into a single PDF.",
 	},
 ];
 
@@ -43,10 +58,10 @@ export function Features() {
 			<div className="mx-auto w-full max-w-6xl space-y-12 px-4 md:px-6">
 				<FadeIn className="text-center">
 					<h2 className="text-3xl font-semibold tracking-tighter sm:text-5xl">
-						Explore Our Powerful Features.
+						Built to Simplify Your Digital Life.
 					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-xl">
-						Everything you need to track warranties, secure documents, and manage important dates.
+						Discover how CheckMyWarranty uses smart AI and offline access to take the hassle out of managing your warranties and personal documents.
 					</p>
 				</FadeIn>
 

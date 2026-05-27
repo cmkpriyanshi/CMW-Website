@@ -17,55 +17,55 @@ export type Testimonial = {
 
 const testimonials = [
   {
-    text: "CheckMyWarranty completely changed how I manage my appliances. I never miss an expiration date now!",
+    text: "CheckMyWarranty is the best warranty tracker app I've used. I simply scan my receipts, and it automatically organizes all my appliance warranties in one place.",
     image: "https://randomuser.me/api/portraits/women/1.jpg",
     name: "Aisha Malik",
     role: "Homeowner",
   },
   {
-    text: "I used to lose track of receipts all the time. Now everything is in one secure vault. Absolutely love it.",
+    text: "I used to lose paper receipts all the time. Now, everything is safely stored in this secure digital vault. It's an absolute must-have.",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
     name: "Jordan Lee",
     role: "Small Business Owner",
   },
   {
-    text: "The reminder system is so smart. I got notified before my laptop warranty expired and saved hundreds on repairs.",
+    text: "The smart expiry reminders are a lifesaver! I got notified exactly a month before my laptop warranty expired and saved hundreds on a free repair.",
     image: "https://randomuser.me/api/portraits/women/3.jpg",
     name: "Priya Sharma",
     role: "Freelance Designer",
   },
   {
-    text: "As someone who buys a lot of electronics, this app is a lifesaver. Everything is organized perfectly.",
+    text: "As someone who buys a lot of electronics, having an offline-first app to track product warranties gives me so much peace of mind.",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
     name: "Carlos Mendes",
     role: "Tech Enthusiast",
   },
   {
-    text: "The digital vault for documents is incredibly secure. I store all my product receipts there without worry.",
+    text: "I love the AI receipt scanner. It pulls out the purchase dates and warranty lengths instantly. No more manual data entry!",
     image: "https://randomuser.me/api/portraits/women/5.jpg",
     name: "Sophie Turner",
     role: "Office Manager",
   },
   {
-    text: "Setting up was super quick. Within minutes I had all my warranties tracked and organized.",
+    text: "The device calendar sync is genius. All my subscription renewals and warranty expiry dates show up right next to my meetings.",
     image: "https://randomuser.me/api/portraits/men/6.jpg",
     name: "Ameer Hassan",
     role: "Product Manager",
   },
   {
-    text: "I recommended CheckMyWarranty to everyone in my family. It's simple yet incredibly powerful.",
+    text: "This is so much more than a receipt scanner app. The personal document vault securely holds my IDs and property deeds.",
     image: "https://randomuser.me/api/portraits/women/7.jpg",
     name: "Layla Johnson",
     role: "Teacher",
   },
   {
-    text: "The intelligent reminders work perfectly. I always know when something needs attention before it's too late.",
+    text: "I recommended this digital warranty organizer to my entire family. It completely eliminates paper clutter and is incredibly easy to use.",
     image: "https://randomuser.me/api/portraits/men/8.jpg",
     name: "David Kim",
     role: "Engineer",
   },
   {
-    text: "Best warranty management app out there. The UI is clean, fast, and easy to navigate.",
+    text: "Finally, a reliable way to track expirations and manage important documents. The seamless cloud sync works flawlessly across all my devices.",
     image: "https://randomuser.me/api/portraits/women/9.jpg",
     name: "Nadia Rahman",
     role: "UX Researcher",
@@ -89,10 +89,10 @@ export function Testimonials() {
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mt-5 text-center">
-            What our users say
+            Loved by Thousands
           </h2>
           <p className="text-center mt-5 text-muted-foreground">
-            Join thousands of users who never miss a warranty expiry again.
+            Join the community of users who rely on the ultimate warranty tracker and personal digital vault.
           </p>
         </FadeIn>
 

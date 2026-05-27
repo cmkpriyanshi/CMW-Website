@@ -38,11 +38,11 @@ export function ReminderHero() {
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center w-full max-w-7xl mx-auto px-4 pb-32">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
           <h1 className="text-4xl leading-[1.1] font-medium tracking-tight sm:text-7xl">
-            Never Miss <br className="hidden lg:block"/>
-            <span className="text-muted-foreground block">A Deadline.</span>
+            Smart Expiry Alerts & <br className="hidden lg:block"/>
+            <span className="text-muted-foreground block">Warranty Reminders.</span>
           </h1>
           <p className="max-w-lg leading-6 tracking-tight sm:text-xl">
-            Intelligent push notifications and automated schedules ensure you never let a valuable warranty expire unnoticed again.
+            Never let a valuable product warranty expire unnoticed. Set automated push notifications and sync reminders directly to your calendar to stay ahead of every deadline.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">

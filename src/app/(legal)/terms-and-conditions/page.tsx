@@ -25,46 +25,55 @@ export default function TermsAndConditions() {
         <section>
           <h2 className="text-2xl font-semibold text-foreground mb-4">2. Description of Service</h2>
           <p>
-            CheckMyWarranty provides a digital platform that allows users to upload, store, and manage product receipts, manuals, and warranty expiration dates. The Service includes automated notifications and reminders regarding expiring warranties. We reserve the right to modify or discontinue, temporarily or permanently, the Service with or without notice.
+            CheckMyWarranty provides a secure digital vault and AI-assisted tracking tool that allows users to upload, store, and manage product receipts, manuals, and personal documents. The Service includes automated push notifications and calendar syncing for expiring warranties and deadlines. CheckMyWarranty is a tracking tool; we are not a warranty provider, insurer, or manufacturer.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">3. User Accounts</h2>
-          <p className="mb-4">When you create an account with us, you must provide accurate, complete, and current information at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account.</p>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">3. AI Accuracy and Liability</h2>
+          <p>
+            Our Service utilizes Artificial Intelligence (AI) to extract text, dates, and prices from the receipts and documents you upload. While we strive for high accuracy, the AI is provided for convenience. <strong>You are solely responsible for verifying the accuracy of any extracted dates, prices, or warranty durations.</strong> CheckMyWarranty is not liable for any missed deadlines, denied claims, or financial losses resulting from incorrect AI extraction or missed notifications.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">4. End-to-End Encryption & Account Access</h2>
+          <p className="mb-4">
+            CheckMyWarranty utilizes End-to-End Encryption (E2EE) to secure your digital vault. Because of this security architecture:
+          </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>You are responsible for safeguarding the password that you use to access the Service.</li>
-            <li>You agree not to disclose your password to any third party.</li>
-            <li>You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</li>
+            <li>We do not possess the decryption keys to access your vaulted documents.</li>
+            <li><strong>If you lose your authentication credentials and account recovery keys, CheckMyWarranty cannot recover your vaulted data.</strong></li>
+            <li>You are solely responsible for securely managing your passwords, devices, and recovery phrases.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">4. User Content & Uploads</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">5. User Content & Uploads</h2>
           <p>
-            Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, or other material (including receipts and manuals). You retain all of your ownership rights in your User Content. However, you are solely responsible for the legality, reliability, and appropriateness of any content you upload to your digital vault. You agree not to upload any content that is illegal, abusive, or designed to interfere with the proper functioning of the Service.
+            You retain all ownership rights to the documents (User Content) you upload to your digital vault. You are solely responsible for the legality and appropriateness of your uploads. You agree not to upload any content that violates copyright laws, contains illegal material, or is designed to interfere with the proper functioning of the Service. We reserve the right to terminate accounts that violate these rules.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">5. Intellectual Property</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">6. Warranty Claims</h2>
           <p>
-            The Service and its original content (excluding User Content), features, and functionality are and will remain the exclusive property of CheckMyWarranty and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries.
+            We do not process warranty claims on your behalf. Providing a digital copy of a receipt via our app does not guarantee that a manufacturer or retailer will honor a warranty claim. All claims are subject to the original terms provided by the product manufacturer or retailer.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">6. Limitation of Liability</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">7. Limitation of Liability</h2>
           <p>
-            In no event shall CheckMyWarranty, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service, or any conduct or content of any third party on the Service.
+            In no event shall CheckMyWarranty, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, denied warranty claims, data loss (including due to lost encryption keys), or other intangible losses, resulting from your access to or use of the Service.
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">7. Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">8. Contact Us</h2>
           <p>
-            If you have any questions about these Terms, please contact us at: <br/>
-            <strong>Email:</strong> support@checkmywarranty.com
+            If you have any questions about these Terms, please contact our legal team at: <br/>
+            <strong>Email:</strong> legal@checkmywarranty.com
           </p>
         </section>
       </div>

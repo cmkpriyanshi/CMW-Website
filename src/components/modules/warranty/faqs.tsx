@@ -21,7 +21,7 @@ function AccordionTriggerFAQs(props: React.ComponentProps<typeof AccordionTrigge
   return (
     <AccordionTrigger
       {...props}
-      className={cn("[&[data-state=open]>svg]:text-foreground text-base lg:text-lg", props.className)}
+      className={cn("[&[data-state=open]>svg]:text-foreground text-base lg:text-lg text-left", props.className)}
     />
   );
 }
@@ -30,55 +30,55 @@ function AccordionContentFAQs(props: React.ComponentProps<typeof AccordionConten
   return <AccordionContent {...props} className={cn("text-muted-foreground lg:text-base", props.className)} />;
 }
 
-export function FAQs() {
+export function WarrantyFAQs() {
   return (
     <div className="mx-auto grid max-w-6xl gap-6 px-6 py-14 md:grid-cols-2 md:gap-14 md:px-10 md:py-25">
       <FadeIn className="flex w-full flex-col gap-6">
-        <Badge variant="secondary" className="mb-2 uppercase">
-          FAQ
+        <Badge variant="secondary" className="mb-2 w-fit uppercase">
+          Warranty FAQ
         </Badge>
         <h2 className="text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-          Frequently
+          Warranty
           <br />
-          Asked <span className="text-muted-foreground">Questions</span>
+          Tracker <span className="text-muted-foreground">Questions</span>
         </h2>
         <p className="max-w-lg text-xs leading-6 tracking-tight sm:text-base">
-          Get answers to commonly asked questions.
+          Get answers to commonly asked questions about our warranty tracker.
         </p>
         <Button className="w-fit" size="lg" asChild>
           <Link href="mailto:hello@checkmywarranty.com">Contact Us</Link>
         </Button>
       </FadeIn>
-      <Accordion type="single" collapsible defaultValue="scanner" className="w-full">
-        <AccordionItemFAQs value="scanner">
-          <AccordionTriggerFAQs>How does the AI receipt scanner work?</AccordionTriggerFAQs>
+      <Accordion type="single" collapsible defaultValue="products" className="w-full">
+        <AccordionItemFAQs value="products">
+          <AccordionTriggerFAQs>What types of products can I track warranties for?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Simply take a photo of your receipt or warranty card. Our AI automatically extracts the purchase date, product name, and warranty length, saving you from manual data entry.
+              You can track warranties for any product appliances, electronics, vehicles, furniture, and more. Our AI automatically handles the details regardless of the item type.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="security">
-          <AccordionTriggerFAQs>Is my personal data safe in the digital vault?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="claims">
+          <AccordionTriggerFAQs>How do I claim a warranty using the app?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Absolutely. We use bank-grade encryption to secure your IDs, property deeds, and personal documents. Plus, your data is synced securely so you can safely access it anywhere.
+              While we don't process claims directly, CheckMyWarranty instantly provides you with all the necessary documents, purchase dates, and customer care info so you can confidently file a claim in seconds with the manufacturer.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="offline">
-          <AccordionTriggerFAQs>Can I use the app without an internet connection?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="resale">
+          <AccordionTriggerFAQs>Can I share a warranty with a buyer if I sell the item?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Yes! CheckMyWarranty is built with an offline-first design. You can add warranties and view your digital vault completely offline. The app will automatically sync your changes to the cloud once you're back online.
+              Yes! You can easily export or transfer the digital warranty record and receipt. Providing complete warranty history significantly increases the resale value of your electronics and appliances.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="reminders">
-          <AccordionTriggerFAQs>How do the smart expiry reminders work?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="faded">
+          <AccordionTriggerFAQs>What happens if my paper store receipt fades over time?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              You can customize timely pre-alerts for any expiring warranty or subscription. We'll send you a push notification exactly when you need it, ensuring you never miss a renewal date or claim window.
+              Fading receipts are exactly why we built CheckMyWarranty! Once you scan your receipt using our app, a high-quality digital copy is permanently stored and backed up in your encrypted vault.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>

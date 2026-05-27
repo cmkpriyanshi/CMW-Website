@@ -38,10 +38,10 @@ export function WarrantyHero() {
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center w-full max-w-7xl mx-auto px-4 pb-32">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
           <h1 className="text-4xl leading-[1.1] font-medium tracking-tight sm:text-7xl">
-            Comprehensive<span className="text-muted-foreground block">Warranty Tracking.</span>
+            Smart Product<span className="text-muted-foreground block">Warranty Tracking.</span>
           </h1>
           <p className="max-w-lg leading-6 tracking-tight sm:text-xl">
-            Never lose a receipt or miss an expiration date again. Securely store and manage all your warranties in one centralized digital vault.
+            Say goodbye to faded paper receipts and missed claims. Use our AI scanner to automatically extract purchase dates and organize all your product warranties in one secure app.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">

@@ -5,52 +5,37 @@ import Link from "next/link";
 
 const links = [
   {
-    title: "CheckMyWarranty",
+    title: "About CMW",
     links: [
       {
-        label: "About Us",
+        label: "Our Story",
         href: "/about",
-        title: "Learn more about CheckMyWarranty",
+        title: "Learn about CheckMyWarranty",
       },
       {
-        label: "Features",
+        label: "App Features",
         href: "/#features",
-        title: "See our features",
+        title: "Discover our AI receipt scanner and vault features",
       },
     ],
   },
   {
-    title: "Modules",
+    title: "Core Features",
     links: [
       {
-        label: "Warranty Tracking",
+        label: "Warranty Tracker",
         href: "/modules/warranty",
-        title: "Explore Warranty Tracking",
+        title: "Automate your product warranty tracking",
       },
       {
-        label: "Digital Vault",
+        label: "Secure Digital Vault",
         href: "/modules/vault",
-        title: "Explore Digital Vault",
+        title: "Securely store your personal documents and IDs",
       },
       {
-        label: "Reminders",
+        label: "Expiry Reminders",
         href: "/modules/reminders",
-        title: "Explore Reminders",
-      },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      {
-        label: "Terms & Conditions",
-        href: "/terms-and-conditions",
-        title: "Read our Terms & Conditions",
-      },
-      {
-        label: "Privacy Policy",
-        href: "/privacy-policy",
-        title: "Read our Privacy Policy",
+        title: "Set smart reminders for renewals and expiring warranties",
       },
     ],
   },
@@ -58,19 +43,34 @@ const links = [
     title: "Resources",
     links: [
       {
-        label: "Blog",
+        label: "Digital Life Blog",
         href: "/blog",
-        title: "Read our Blog",
+        title: "Tips on personal document security and warranty tracking",
       },
       {
-        label: "Case Studies",
+        label: "Customer Stories",
         href: "/case-study",
-        title: "Read our Case Studies",
+        title: "Read how others organize their digital life",
+      },
+    ],
+  },
+  {
+    title: "Legal & Support",
+    links: [
+      {
+        label: "Contact Support",
+        href: "mailto:hello@checkmywarranty.com",
+        title: "Get in touch with the CheckMyWarranty team",
       },
       {
-        label: "Contact Us",
-        href: "mailto:hello@checkmywarranty.com",
-        title: "Contact Us",
+        label: "Privacy Policy",
+        href: "/privacy-policy",
+        title: "How we protect your personal data",
+      },
+      {
+        label: "Terms of Service",
+        href: "/terms-and-conditions",
+        title: "CheckMyWarranty Terms of Service",
       },
     ],
   },

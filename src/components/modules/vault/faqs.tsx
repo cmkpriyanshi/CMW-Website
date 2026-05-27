@@ -21,7 +21,7 @@ function AccordionTriggerFAQs(props: React.ComponentProps<typeof AccordionTrigge
   return (
     <AccordionTrigger
       {...props}
-      className={cn("[&[data-state=open]>svg]:text-foreground text-base lg:text-lg", props.className)}
+      className={cn("[&[data-state=open]>svg]:text-foreground text-base lg:text-lg text-left", props.className)}
     />
   );
 }
@@ -30,55 +30,55 @@ function AccordionContentFAQs(props: React.ComponentProps<typeof AccordionConten
   return <AccordionContent {...props} className={cn("text-muted-foreground lg:text-base", props.className)} />;
 }
 
-export function FAQs() {
+export function VaultFAQs() {
   return (
     <div className="mx-auto grid max-w-6xl gap-6 px-6 py-14 md:grid-cols-2 md:gap-14 md:px-10 md:py-25">
       <FadeIn className="flex w-full flex-col gap-6">
-        <Badge variant="secondary" className="mb-2 uppercase">
-          FAQ
+        <Badge variant="secondary" className="mb-2 w-fit uppercase">
+          Vault FAQ
         </Badge>
         <h2 className="text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-          Frequently
+          Digital Vault
           <br />
-          Asked <span className="text-muted-foreground">Questions</span>
+          <span className="text-muted-foreground">Questions</span>
         </h2>
         <p className="max-w-lg text-xs leading-6 tracking-tight sm:text-base">
-          Get answers to commonly asked questions.
+          Get answers to commonly asked questions about our secure digital archive.
         </p>
         <Button className="w-fit" size="lg" asChild>
           <Link href="mailto:hello@checkmywarranty.com">Contact Us</Link>
         </Button>
       </FadeIn>
-      <Accordion type="single" collapsible defaultValue="scanner" className="w-full">
-        <AccordionItemFAQs value="scanner">
-          <AccordionTriggerFAQs>How does the AI receipt scanner work?</AccordionTriggerFAQs>
-          <AccordionContentFAQs>
-            <p>
-              Simply take a photo of your receipt or warranty card. Our AI automatically extracts the purchase date, product name, and warranty length, saving you from manual data entry.
-            </p>
-          </AccordionContentFAQs>
-        </AccordionItemFAQs>
+      <Accordion type="single" collapsible defaultValue="security" className="w-full">
         <AccordionItemFAQs value="security">
           <AccordionTriggerFAQs>Is my personal data safe in the digital vault?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Absolutely. We use bank-grade encryption to secure your IDs, property deeds, and personal documents. Plus, your data is synced securely so you can safely access it anywhere.
+              Absolutely. We use bank-grade end-to-end encryption to secure your personal IDs, property deeds, and important documents. Only you have the keys to access your data.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
         <AccordionItemFAQs value="offline">
-          <AccordionTriggerFAQs>Can I use the app without an internet connection?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>Can I access my vault documents if I don't have internet?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Yes! CheckMyWarranty is built with an offline-first design. You can add warranties and view your digital vault completely offline. The app will automatically sync your changes to the cloud once you're back online.
+              Yes! CheckMyWarranty is built with an offline-first design. You can view your securely cached documents, such as insurance cards or warranties, anywherecompletely offline.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
-        <AccordionItemFAQs value="reminders">
-          <AccordionTriggerFAQs>How do the smart expiry reminders work?</AccordionTriggerFAQs>
+        <AccordionItemFAQs value="limits">
+          <AccordionTriggerFAQs>Is there a limit to how many receipts I can upload?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              You can customize timely pre-alerts for any expiring warranty or subscription. We'll send you a push notification exactly when you need it, ensuring you never miss a renewal date or claim window.
+              No, you can upload unlimited receipts and multi-page documents. Our intelligent digital vault will automatically categorize and tag everything for you so you never lose track of a file.
+            </p>
+          </AccordionContentFAQs>
+        </AccordionItemFAQs>
+        <AccordionItemFAQs value="sharing">
+          <AccordionTriggerFAQs>How do I share a document with someone else?</AccordionTriggerFAQs>
+          <AccordionContentFAQs>
+            <p>
+              You can easily generate a secure, temporary read-only link or export the file directly as a PDF. This lets you share documents with your family or accountant without giving them full access to your vault.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>

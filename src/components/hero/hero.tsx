@@ -47,10 +47,10 @@ export function Hero() {
       <Nav />
       <div className="mt-16 flex flex-col items-center gap-6">
         <h1 className="text-center text-4xl leading-[1.1] font-medium tracking-tight sm:text-7xl">
-          Meet the App<span className="text-muted-foreground block">That Does It All.</span>
+          Never Lose a<span className="text-muted-foreground block">Warranty Again.</span>
         </h1>
         <p className="max-w-lg text-center leading-6 tracking-tight sm:text-xl">
-          Powerful, intuitive, and ready to make your life easier, start using CheckMyWarranty App today.
+          Scan receipts, organize personal documents, and get smart expiry reminders all powered by AI.
         </p>
         <div className="mb-10 flex flex-col sm:flex-row gap-4">
           <Button size="lg" className="px-6 py-8 w-full sm:w-[240px]" asChild>
